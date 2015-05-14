@@ -56,4 +56,21 @@ public class Room {
 	public Room getWest() {
 		return west;
 	}
+	
+	public String exits() {
+		String paths = "";
+		if(north != null) {
+			paths += "North ";
+		}
+		if(east != null) {
+			paths += "East ";
+		}
+		if(south != null) {
+			paths += "South ";
+		}
+		if(west != null) {
+			paths += "West ";
+		}
+		return paths;
+	}
 }
